@@ -1,0 +1,353 @@
+:root {
+  --rosa-primario: #f71963;
+  --cinza-primario: #9f9f9f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 18rem;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--cinza-primario);
+}
+
+.header-info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.header-info-icon span {
+  color: var(--rosa-primario);
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #9f9f9f;
+  margin-right: 10px;
+}
+
+input[type="search"] {
+  padding-right: 30px; /* Para dar espaço para o ícone */
+  width: 657px; /* Defina a largura desejada */
+  background-color: #f6f5f2;
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0rem 1rem 1rem;
+  align-items: center;
+  border: none;
+}
+
+.header-utilitaires {
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.header-utilitaires img:hover {
+  transform: scale(1.25);
+}
+
+.header-map {
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--cinza-primario);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.header-map h3:hover {
+  color: var(--rosa-primario);
+}
+
+#main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7)),
+    url("../assets/Rectangle\ 250.png");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  padding: 7rem 0;
+}
+
+#main h2 {
+  font-weight: 600;
+  font-size: 48px;
+  color: white;
+  padding-left: 20px;
+  line-height: 72px;
+}
+
+#main h3 {
+  margin-top: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  color: white;
+  padding-left: 20px;
+}
+
+#main button {
+  width: 227px;
+  height: 60px;
+  border-radius: 5px;
+  background-color: #f71963;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#main button:hover {
+  background-color: #dc497a;
+}
+
+.categories {
+  margin: 54px 124px;
+  display: flex;
+  gap: 53px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.categories-container {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 128px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+
+.categories-container i {
+  font-size: 45px;
+}
+
+.categories-container:hover i {
+  transform: scale(1.2);
+  color: var(--rosa-primario);
+}
+
+.categories-container:hover {
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-text p {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #4e4e4e;
+}
+
+.categories-text:hover p {
+  color: var(--rosa-primario);
+}
+
+.popular-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 5px;
+}
+
+.popular-title h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--rosa-primario);
+  line-height: 45px;
+}
+
+.tech-products {
+  text-transform: uppercase;
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3b3b3b;
+  border: 1px solid #bdbdbd;
+  cursor: pointer;
+}
+
+.tech-products p {
+  padding: 12px 58px;
+}
+
+.tech-products p:hover {
+  color: var(--rosa-primario);
+}
+
+.swiper {
+  margin-top: 20px;
+  width: 77vw;
+  height: 500px;
+}
+
+.swiper-slide {
+    background-position: center;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.04);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper-slide img {
+    width: 90%;
+    text-align: center;
+}
+
+.swiper-slide h3 {
+  margin-top: 49px;
+  margin-bottom: 1px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.swiper-slide h4 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--cinza-primario);
+  text-decoration: line-through;
+}
+
+.swiper-slide h2 {
+    color: #3F3F40;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.swiper-slide p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3F3F40;
+    margin-bottom: 7px;
+}
+
+.swiper-slide h5 {
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--rosa-primario);
+}
+
+.swiper-slide button {
+    width: 100%;
+    margin-top: 12px;
+    height: 10%;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: var(--rosa-primario);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.swiper-slide button:hover {
+    background-color:#dc497a;
+    transform: scale(1.02);
+}
+
+
+
+.swiper-slide:hover img {
+    transform: scale(1.1);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    display: none;
+}
+
+.imgs-partners {
+    margin: 71px 15px 60px 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgs-partners1 {
+    padding: 39px 40px;
+    width: 40%;
+    height: 350px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.7)), url("../assets/Mask\ Group.png");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgs-partners1 h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    margin-top: 10%;
+}
+
+.imgs-partners1 p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.imgs-partners1 button {
+    width: 131px;
+    height: 48px;
+    background-color: var(--rosa-primario);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 30px;
+}
+
+.imgs-partners1 button:hover {
+    background-color:#dc497a;
+    transform: scale(1.02);
+}
+
