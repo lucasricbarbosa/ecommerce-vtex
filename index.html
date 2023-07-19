@@ -19,15 +19,15 @@
 
 <body>
     <div class="header-info">
-        <div class="header-info-icon">
+        <div class="header-info-icon header-info-icon-shield">
             <img src="./assets/ShieldCheck.svg" alt="Icone Escudo">
             <p>Compra <span>100% segura</span></p>
         </div>
-        <div class="header-info-icon">
+        <div class="header-info-icon header-info-icon-truck">
             <img src="./assets/Truck.svg" alt="Icone Caminhão">
             <p><span>Frete grátis</span> acima de R$200</p>
         </div>
-        <div class="header-info-icon">
+        <div class="header-info-icon header-info-icon-card">
             <img src="./assets/CreditCard.svg" alt="Icone Cartão">
             <p><span>Parcele</span> suas compras</p>
         </div>
@@ -35,28 +35,56 @@
     <hr>
 
     <header id="header">
-        <img src="./assets/Group 35.svg" alt="">
+        <img class="header-img-principal" src="./assets/Group 35.svg" alt="">
         <div class="search-container">
-            <input type="search" placeholder="         O que você está buscando?">
+            <input type="search" placeholder="O que você está buscando?">
             <i class="fas fa-search search-icon"></i>
         </div>
-        <div class="header-utilitaires">
-            <img src="./assets/Group.svg" alt="Icone Envios">
-            <img src="./assets/Heart.svg" alt="Icone Coracao">
-            <img src="./assets/UserCircle.svg" alt="Icone Usuario">
-            <img src="./assets/ShoppingCart.svg" alt="">
+        <div id="nav" class="header-utilitaires">
+            <button id="btn-mobile">
+                <span id="btn-hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="#"><img src="./assets/Group.svg" alt="Icone Envios"><p>Pedidos</p></li></a>
+                <li><a href="#"><img src="./assets/Heart.svg" alt="Icone Coracao"><p>Favoritos</p></li></a>
+                <li><a href="#"><img src="./assets/UserCircle.svg" alt="Icone Usuario"><p>Login</p></li></a>
+                <li><a href="#"><img src="./assets/ShoppingCart.svg" alt=""><p>Carrinho</p></li></a>
+                <div class="menu-a">
+                <li><a href="#populares"><p>Populares</p></a></li>
+                <li><a href="#parceiros"><p>Parceiros</p></a></li>
+                <li><a href="#recomendados"><p>Recomendados</p></a></li>
+                <li><a href="#nossos-produtos"><p>Nossos produtos</p></a></li>
+                <li><a href="#marcas"><p>Marcas</p></a></li>
+                <li><a href="#sugestoes"><p>Sugestões</p></a></li>
+                <li><a href="#contato"><p>Contato</p></a></li>
+                </div>
+            </ul>
         </div>
     </header>
     <hr>
 
     <div class="header-map">
-        <a href="#populares"><h3>Populares</h3></a>
-        <a href="#parceiros"><h3>Parceiros</h3></a>
-        <a href="#recomendados"><h3>Recomendados</h3></a>
-        <a href="#nossos-produtos"><h3>Nossos produtos</h3></a>
-        <a href="#marcas"><h3>Marcas</h3></a>
-        <a href="#sugestoes"><h3>Sugestões</h3></a>
-        <a href="#contato"> <h3>Contato</h3></a>    
+        <a href="#populares">
+            <h3>Populares</h3>
+        </a>
+        <a href="#parceiros">
+            <h3>Parceiros</h3>
+        </a>
+        <a href="#recomendados">
+            <h3>Recomendados</h3>
+        </a>
+        <a href="#nossos-produtos">
+            <h3>Nossos produtos</h3>
+        </a>
+        <a href="#marcas">
+            <h3>Marcas</h3>
+        </a>
+        <a href="#sugestoes">
+            <h3>Sugestões</h3>
+        </a>
+        <a href="#contato">
+            <h3>Contato</h3>
+        </a>
     </div>
 
     <main id="main">
@@ -348,7 +376,7 @@
             <button>Confira</button>
         </div>
     </div>
-    
+
 
     <div id="marcas" class="brands-title popular-title">
         <h2>Navegue por marcas</h2>
@@ -514,6 +542,42 @@
         </div>
     </section>
 
+    <footer id="contato" class="footer">
+        <div class="about-us">
+            <h3>Sobre nós</h3>
+            <div class="about-us-text">
+                <p>conheça</p>
+                <p>como comprar</p>
+                <p>indicação e desconto</p>
+            </div>
+            <div class="about-us-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="about-us">
+            <h3>Informações úteis</h3>
+            <div class="about-us-text">
+                <p>fale conosco</p>
+                <p>dúvidas</p>
+                <p>prazos de entrega</p>
+                <p>formas de pagamento</p>
+                <p>política de privacidade</p>
+                <p>trocas e devoluções</p>
+            </div>
+        </div>
+        </div>
+        <div class="register-us">
+            <h3>Cadastre-se e receba nossas</h3>
+            <h2>Novidades e promoções</h2>
+            <p>Lorem ipsum dolor sit amet consectetur <br>, adipisicing elit. Deserunt, a!</p>
+            <div class="register-us-form">
+                <input type="text" placeholder="Seu E-mail">
+                <button>Ok</button>
+            </div>
+        </div>
+    </footer>
 
 
 
