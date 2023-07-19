@@ -621,6 +621,10 @@ input[type="search"] {
   transform: scale(1.05);
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 @media screen and (max-width: 1210px) {
   .tech-products p {
     padding: 12px 30px;
@@ -685,6 +689,11 @@ input[type="search"] {
 }
 
 @media screen and (max-width: 768px) {
+  .swiper-pagination {
+    display: block;
+    color: #f71963;
+  }
+
   #main h2 {
     font-size: 35px;
   }
