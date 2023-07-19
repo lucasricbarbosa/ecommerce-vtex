@@ -880,8 +880,3 @@ input[type="search"] {
   }
 }
 
-@media screen and (max-width: 370px) {
- .swiper2 {
-  padding: 0 40px 0 0;
- }
-}
