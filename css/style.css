@@ -165,13 +165,12 @@ input[type="search"] {
   gap: 53px;
   align-items: center;
   justify-content: space-evenly;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  opacity: 0.1;
+  
 }
 
-.categories.visible {
+.categories-container.visible {
   opacity: 1; /* Quando a classe 'visible' é aplicada, a opacidade é definida como 1 para exibir o item */
-  transform: translateY(10px); /* A animação de baixo para cima é ativada */
+  transform: translateY(2px); /* A animação de baixo para cima é ativada */
 }
 
 .categories-container {
@@ -184,6 +183,8 @@ input[type="search"] {
   border-radius: 10px;
   background-color: #f4f4f4;
   cursor: pointer;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0.1;
 }
 
 .categories-container i {
