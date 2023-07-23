@@ -62,7 +62,7 @@ function isElementInViewport(el) {
 
 // Função para verificar quais itens estão na tela e aplicar a classe 'visible'
 function checkScroll() {
-    const items = document.querySelectorAll('.swiper');
+    const items = document.querySelectorAll('.swiper, .categories');
     items.forEach(item => {
         if (isElementInViewport(item)) {
             item.classList.add('visible');
